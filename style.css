@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Noto Sans;
+    src: url(assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto Sans;
+}
+
+body.light {
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #040918 30%, #091540 100%);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    padding: 10vh;
+}
+
+/* Editando a barra do topo */
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.topo button {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    opacity: 0.8;
+    border-radius: 7px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tema-escuro {
+        display: none;
+    }
+
+.topo button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.topo button:focus {
+    border: 2px solid red;
+}
+
+/* Editando o topo do corpo */
+
+.corpo {
+    margin-top: 20px;
+}
+
+.topo-corpo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.topo-corpo h1 {
+    color: white;
+    width: 100%;
+}
+
+.butao {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    gap: 10px;
+}
+
+.butao button {
+    font-size: 16px;
+    padding: 10px;
+    min-width: 50px;
+    border-radius: 20px;
+    border: 0.1px solid hsl(224, 14%, 31%);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.butao button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.butao button:focus {
+    outline: 2px solid red;
+}
+
+/* Editando os cards */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    opacity: 0.8;
+    width: auto;
+    width: 350px;
+    height: 180px;
+    padding: 10px;
+    border: 0.1px solid hsl(224, 14%, 31%);
+}
+
+.topo-card {
+    display: flex;
+    gap: 10px;margin-bottom: 20px;
+}
+
+.descricao h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.descricao p {
+    color: rgb(182, 179, 179);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.rodape-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape-card button {
+    font-size: 16px;
+    border: 0.1px solid hsl(224, 14%, 31%);
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.rodape-card button:hover {
+    background-color: rgb(247, 62, 62);
+    color: hsl(227, 75%, 14%);
+}
+
+.rodape-card button:focus {
+    outline: 2px solid red;
+}
+
+.chk {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    background-color: rgba(155, 155, 155, 0.5);
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0.9px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.chk:checked ~ .switch {
+    background-color: hsl(3, 71%, 56%);
+}
+
+.chk:checked ~ .switch .slider {
+    transform: translateX(20px);
+}
+
+.light {
+
+    #tema-claro {
+        display: none;
+    }
+
+    #tema-escuro {
+        display: block;
+    }
+
+    .topo {
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .topo button {
+        background-color: rgba(161, 158, 158, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topo button:hover {
+        background-color: white;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+        border: none;
+    }
+
+    .rodape-card button {
+        color: hsl(227, 75%, 14%);
+        border: none;
+    }
+
+    .rodape-card button:hover {
+        background-color: rgb(255, 37, 37);
+        color: white;
+    }
+
+    .butao button {
+        color: hsl(227, 75%, 14%);
+        border: 0.2px;
+    }
+
+    .butao button:hover {
+        background-color: rgb(167, 167, 167);
+    }
+
+    .descricao h2 {
+        color: hsl(227, 75%, 14%);
+    }
+
+    .descricao p {
+        color: rgb(66, 66, 66);
+    }
+
+    .topo-corpo h1 {
+        color: hsl(227, 75%, 14%);
+    }
+}
+
+@media (max-width: 375px) {
+    #main {
+        padding: 30px 20px;
+    }
+
+    .topo-corpo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+}

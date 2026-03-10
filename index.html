@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.png">
+    <title>Browser Extension</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="topo">
+        <img src="assets/images/logo.svg" alt="logo" />
+        <button onclick="trocarfundo()">
+          <img id="tema-claro" src="assets/images/icon-sun.svg" alt="sol" />
+          <img id="tema-escuro" src="assets/images/icon-moon.svg" alt="lua" />
+        </button>
+      </div>
+
+      <div class="corpo">
+        <div class="topo-corpo">
+          <h1>Extension List</h1>
+
+          <div class="butao">
+            <button onclick="Todos()" id="todos">All</button>
+            <button onclick="Ativados()" id="ativo">Active</button>
+            <button onclick="Desativados()" id="desativo">Inactive</button>
+          </div>    
+        </div>
+
+        <div class="cards">
+          <div id="card1" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-devlens.svg" alt="icone do devlens" />                                               
+
+              <div class="descricao">
+                <h2>DevLens</h2>
+                <p>
+                  Quickly inspect page layouts and visualize element boundaries.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del1">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk1" />
+                  <label for="chk1" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card2" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-console-plus.svg" alt="icone do console plus" />
+
+              <div class="descricao">
+                <h2>Console Plus</h2>
+                <p>
+                  Enhanced developer console with advanced filtering and logging.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del2">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk2" />
+                  <label for="chk2" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card3" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-dom-snapshot.svg" alt="icone do dom snapshot" />
+
+              <div class="descricao">
+                <h2>DOM Snapshot</h2>
+                <p>
+                  Capture and export DOM structures quickly.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del3">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk3" />
+                  <label for="chk3" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card4" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-grid-guides.svg" alt="icone do grid guides" />
+              
+              <div class="descricao">
+                <h2>Grid Guides</h2>
+                <p>
+                  Overlay customizable grids and alignment guides on any webpage.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del4">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk4" />
+                  <label for="chk4" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card5" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-json-wizard.svg" alt="icone do json wizard" />
+
+              <div class="descricao">
+                <h2>JSON Wizard</h2>
+                <p>
+                  Formats, validates, and prettifies JSON responses in-browser.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del5">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk5" />
+                  <label for="chk5" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card6" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-link-checker.svg" alt="icone do link checker" />
+
+              <div class="descricao">
+                <h2>Link Checker</h2>
+                <p>
+                  Scans and highlights broken links on any page.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del6">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk6" />
+                  <label for="chk6" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card7" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-markup-notes.svg" alt="icone do markup notes" />
+
+              <div class="descricao">
+                <h2>Markup Notes</h2>
+                <p>
+                  Enables annotation and notes directly onto webpages for collaborative debugging.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del7">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk7" />
+                  <label for="chk7" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card8" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-palette-picker.svg" alt="icone do palette picker" />
+
+              <div class="descricao">
+                <h2>Palette Picker</h2>
+                <p>
+                  Instantly extracts color palettes from any webpage.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del8">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk8" />
+                  <label for="chk8" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card9" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-speed-boost.svg" alt="icone do speed boost" />
+
+              <div class="descricao">
+                <h2>Speed Boost</h2>
+                <p>
+                  Optimizes browser resource usage to accelerate page loading.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del9">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk9" />
+                  <label for="chk9" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card10" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-style-spy.svg" alt="icone do style spy" />
+
+              <div class="descricao">
+                <h2>Style Spy</h2>
+                <p>
+                  Instantly analyze and copy CSS from any webpage element.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del10">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk10" />
+                  <label for="chk10" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card11" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-tab-master-pro.svg" alt="icone do tab master pro" />
+
+              <div class="descricao">
+                <h2>Tab Master Pro</h2>
+                <p>
+                  Organizes browser tabs into groups and sessions.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del11">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox" class="chk" id="chk11" />
+                  <label for="chk11" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="card12" class="card">
+            <div class="topo-card">
+              <img src="assets/images/logo-viewport-buddy.svg" alt="icone do viewport buddy" />
+
+              <div class="descricao">
+                <h2>Viewport Buddy</h2>
+                <p>
+                  Simulates various screen resolutions directly within the browser.
+                </p>
+              </div>
+            </div>
+            <div class="rodape-card"> 
+              <button onclick="Remover(this)" id="del12">Remove</button>
+
+              <div class="switch">
+                  <input type="checkbox"class="chk" id="chk12" />
+                  <label for="chk12" class="switch">
+                    <span class="slider"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
