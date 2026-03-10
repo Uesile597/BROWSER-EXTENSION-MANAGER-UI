@@ -22,7 +22,7 @@ Caminho do screenshot: (assets/images/screenshot.png)
 ### Links
 URL da Solução no GitHub: [https://github.com/Uesile597/BROWSER-EXTENSION-MANAGER-UI.git]
 
-URL do Site Ao Vivo: Adicione a URL do site ao vivo aqui
+URL do Site Ao Vivo: (https://browserextensionn.netlify.app)
 
 ### Meu processo
 
@@ -133,5 +133,6 @@ Mais como pesquisa, e algumas vezes como debug.
 As pesquisas eram sempre muito boas, mas os debugs as vezes não eram 100% eficazes.
 
 ### Autor
-- Website - [Uesile Alisson de Carvalho](https://www.your-site.com)
+- Website - https://browserextensionn.netlify.app
+
 - Frontend Mentor - [@Uesile](https://www.frontendmentor.io/profile/Uesile)
